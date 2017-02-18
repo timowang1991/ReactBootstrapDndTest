@@ -244,11 +244,28 @@ var EditTopicModuleSettings = React.createClass({
                                 <input type="checkbox" />
                             </InputGroup.Addon>
                             <InputGroup.Addon>{'Poll Title'}</InputGroup.Addon>
+                            <InputGroup.Addon>{'Poll Title'}</InputGroup.Addon>
                             <FormControl type="text" placeholder="Enter route" />
                             <FormControl type="text" placeholder="Enter route" />
                         </InputGroup>
                     </FormGroup>
+                    <FormGroup>
+                        <ControlLabel>Poll URL</ControlLabel>
+                        <FormControl type="text" placeholder="Enter route" />
+                        <FormControl type="text" placeholder="Enter route" />
+                    </FormGroup>
                 </Form>
+
+                <Panel header="poll">
+                    <Form>
+                        <Col md={6}>
+                            <FormControl type="text" placeholder="Enter title" />
+                        </Col>
+                        <Col md={6}>
+                            <FormControl type="text" placeholder="Enter List ID" />
+                        </Col>
+                    </Form>
+                </Panel>
             </div>
         );
     }
